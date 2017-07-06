@@ -1,15 +1,25 @@
 {
   "name": "node-web-server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0",
+    "express": "^4.15.3",
     "hbs": "^4.0.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oshisamarasinghe/success.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oshisamarasinghe/success/issues"
+  },
+  "homepage": "https://github.com/oshisamarasinghe/success#readme",
+  "description": ""
 }

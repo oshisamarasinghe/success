@@ -1,7 +1,7 @@
 const express=require("express");
 const hbs=require("hbs");
 
-
+const port=process.env.PORT || 5000; //for heroku we need to convert to a env variable
 var app=express();
 app.set('view engine','hbs');
 hbs.registerPartials(__dirname+'/views/partials');
@@ -39,4 +39,11 @@ app.get('/bad',(req,res)=>{
   });
 });
 
-app.listen(5000);
+/*app.listen(5000,() =>{
+  console.log('server is up on port 5000');
+});*/
+
+//for heroku
+app.listen(port,() =>{
+  console.log('server is up on port '+port);
+});
